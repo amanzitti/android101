@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/hname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        style="@style/ExampleText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Iron Man"
+        android:layout_toRightOf="@id/hname"
+        style="@style/ExampleText"/>
+    <TextView
+        android:id="@+id/hability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ability"
+        android:layout_below="@id/hname"
+        style="@style/ExampleText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Inventing"
+        android:layout_toRightOf="@id/hability"
+        android:layout_below="@id/hname"
+        style="@style/ExampleText"/>
+</RelativeLayout>
