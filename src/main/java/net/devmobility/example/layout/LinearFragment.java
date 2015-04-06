@@ -19,7 +19,7 @@ public class LinearFragment extends Fragment {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_linear_default,  container, false);
+            View rootView = inflater.inflate(R.layout.fragment_testsql,  container, false);
             return rootView;
         }
 }

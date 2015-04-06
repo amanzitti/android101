@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <EditText
+        android:id="@+id/statement_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minLines="5"
+        android:maxLines="5"
+        android:textSize="12pt"
+        android:layout_toLeftOf="@+id/execute_button"
+        android:selectAllOnFocus="true"
+        android:hint="@string/statement_hint"/>
+    <Button
+        android:id="@+id/execute_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/execute"/>
+    <ScrollView
+        android:id="@+id/result_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/statement_edit"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="12pt"
+            tools:text="This is a test"/>
+    </ScrollView>
+</RelativeLayout>

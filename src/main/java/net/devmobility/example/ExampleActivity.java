@@ -14,6 +14,7 @@ import net.devmobility.example.layout.LinearVerticalFragment;
 import net.devmobility.example.layout.RelativeFragment;
 import net.devmobility.example.layout.TableFragment;
 import net.devmobility.example.listview.ListViewFragment;
+import net.devmobility.example.sqlite.TestSQLFragment;
 
 public class ExampleActivity extends ActionBarActivity {
 
@@ -51,6 +52,8 @@ public class ExampleActivity extends ActionBarActivity {
         } else if (id == R.id.action_show_list) {
             swapFragment(new ListViewFragment());
             return true;
+        } else if (id == R.id.action_test_sql) {
+            swapFragment(new TestSQLFragment());
         }
         return super.onOptionsItemSelected(item);
     }
