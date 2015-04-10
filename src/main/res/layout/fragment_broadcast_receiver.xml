@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.devmobility.example.service.BinderFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/button_send_receiver_service"
+            android:hint="@string/hint_receiver_service"/>
+        <Button
+            android:id="@+id/button_send_receiver_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/send_receiver_service"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:background="@android:color/holo_green_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:id="@+id/broadcast_receiver_result"
+            android:padding="10dp"
+            android:textSize="14pt"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+</LinearLayout>

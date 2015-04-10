@@ -9,4 +9,6 @@
         android:orderInCategory="102" app:showAsAction="ifRoom"/>
     <item android:id="@+id/action_test_sql" android:title="@string/action_test_sql"
         android:orderInCategory="103" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_test_service" android:title="@string/action_test_services"
+        android:orderInCategory="103" app:showAsAction="ifRoom"/>
 </menu>

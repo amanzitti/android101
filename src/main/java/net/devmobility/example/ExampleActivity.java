@@ -2,6 +2,7 @@ package net.devmobility.example;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -14,6 +15,7 @@ import net.devmobility.example.layout.LinearVerticalFragment;
 import net.devmobility.example.layout.RelativeFragment;
 import net.devmobility.example.layout.TableFragment;
 import net.devmobility.example.listview.ListViewFragment;
+import net.devmobility.example.service.ServiceActivity;
 import net.devmobility.example.sqlite.TestSQLFragment;
 
 public class ExampleActivity extends ActionBarActivity {
@@ -54,6 +56,10 @@ public class ExampleActivity extends ActionBarActivity {
             return true;
         } else if (id == R.id.action_test_sql) {
             swapFragment(new TestSQLFragment());
+            return true;
+        } else if (id == R.id.action_test_service) {
+            startActivity(new Intent(this, ServiceActivity.class));
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
